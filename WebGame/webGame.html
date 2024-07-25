@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Shoot</title>
+    <style>.no-click {
+        pointer-events: none;
+    }</style>
+    <link rel="stylesheet" href="webGame.css">
+    <audio id="shotgun" src="sfx\564480__lumikon__shotgun-shot-sfx.wav"></audio>
+    <audio id="shell" src="sfx\564481__lumikon__shotgun-shell-drop-sfx.wav"></audio>
+    <audio id="reloadSound" src="sfx\564482__lumikon__shotgun-reload-sfx.wav"></audio>
+    <audio id="ambiance1"  preload="auto" loop><source src="sfx\500169__sad3d__lakeside-ambience.wav" type="audio/wav"></audio>
+    <audio id="duckSound1" src="sfx\185549__crazyduckman__a-quack.wav"></audio>
+    <audio id="duckSound2" src=" sfx\185547__crazyduckman__duck-attacked.wav"></audio>
+   
+</head>
+<body>
+     <h1>Shoot the Duck Game!</h1>
+    <section class="tryAgain">
+        <button id="tryAgainButton">TRY AGAIN</button>
+        </section>
+    
+    <section id="results">
+        <div class="winner hidden">YOU WIN!</div><div class="loser hidden">YOU LOSE!</div>        
+    </section>
+    <button id="gameButton">
+        <img src="images/flyingDuck1.png" alt="duck">
+        
+    </button>
+    <footer id="hud">       
+    <h2>
+        Duck's Shot: <span id="ducks">0</span>
+        Duck's Missed: <span id="missed">0</span>
+        Shots Taken: <span id="shots-taken">0</span>
+    </h2>
+    <section class="ammo">
+    <img class="shell1 show" src="images\shotgunshell.png" alt="shell">
+    <img class="shell2 show" src="images\shotgunshell.png" alt="shell">
+    <img class="shell3 show"src="images\shotgunshell.png" alt="shell">
+    <img class="shell4 show"src="images\shotgunshell.png" alt="shell">
+    <img class="shell5 show"src="images\shotgunshell.png" alt="shell">
+    <img class="shell6 show"src="images\shotgunshell.png" alt="shell">
+    <button id="reload">(R) RELOAD</button>
+</section>
+       
+    </footer>
+    <script src="webGame.js"></script>
+</body>
+</html>
