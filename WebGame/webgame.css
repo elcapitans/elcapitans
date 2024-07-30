@@ -91,6 +91,19 @@ button img {
     
 
 }
+.tryAgain{
+  display: flex;
+  background-color: bisque;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10%;
+  height: 300px;
+  border: 1px solid black;
+  padding-top:10px;
+  width: 200px;
+
+}
 
 
 #tryAgainButton {
@@ -101,6 +114,8 @@ button img {
     font-size: 20px; 
     padding: 10px;
     border-radius: 5px;
+    cursor: url('images/crossHair.png') 50 50, auto;
+    
    
 }
 #hud{
@@ -111,13 +126,35 @@ button img {
     border-radius: 5px;
     border: 1px solid black;
 }
+#countdown{
+    font-family: 'Digital-7', sans-serif; /* Use a digital-style font if available */
+color: red;
+font-size: 40px;
+background-color: #333;
+border-radius: 10%;
+border: 5px solid black;
+width: 200px;
+text-align: center;
+position: fixed; /* Fixed positioning relative to the viewport */
+top: 0; /* Aligns the element to the top of the viewport */
+left: 50%; /* Centers the element horizontally within the viewport */
+transform: translateX(-50%);
+padding: 10px; /* Optional: for visualization */
+
+}
+
 .ammo {
     height: 100px;
     display: flex; 
     align-items: center;
     justify-content: center; 
     flex-wrap: wrap; 
-    gap: 10px; 
+    gap: 10px;  
+}
+.shell1,.shell2,.shell3,.shell4,.shell5,.shell6,.shell7{
+    width: 25px;
+    height: 80px;
+    
 }
 
 
@@ -133,3 +170,14 @@ button img {
 .hidden {
     display: none;
 }
+.opacity{
+    opacity: 90%;
+}
+.hide {
+    opacity:30%; /* Hide shells by default */
+}
+.show {
+    opacity: 1; /* Show shells */
+}
+
+
